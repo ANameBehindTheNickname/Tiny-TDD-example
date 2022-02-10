@@ -7,9 +7,9 @@ import XCTest
 @testable import NumbersToStrings
 
 class NumbersToStringsTests: XCTestCase {
-
-    func test_9Int_convertsToNine() {
-        let expected = numberToString(9)
-        XCTAssertEqual(expected, "Nine")
+    
+    func test_0Int_convertsToZero() {
+        let expected = numberToString(0)
+        XCTAssertEqual(expected, "Zero")
     }
 }
