@@ -10,13 +10,15 @@ let digitNames = [
 
 func numberToString(_ number: Int) -> String {
     var number = number
-    var stringDigits = [String]()
+    var numbers = [Int]()
     while number / 10 > 0 {
-        stringDigits.append(digitNames[number % 10] ?? "")
+        numbers.append(number % 10)
         number /= 10
     }
     
-    stringDigits.append(digitNames[number] ?? "")
-    
-    return stringDigits.reversed().joined()
+    numbers.append(number)
+    return numbers
+        .reversed()
+        .compactMap { digitNames[$0] }
+        .joined()
 }
