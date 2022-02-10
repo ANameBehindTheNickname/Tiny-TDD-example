@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F889B6BF27B53A31002B7AFC /* NumbersToStrings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F889B6B627B53A31002B7AFC /* NumbersToStrings.framework */; };
 		F889B6C427B53A31002B7AFC /* NumbersToStringsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889B6C327B53A31002B7AFC /* NumbersToStringsTests.swift */; };
-		F889B6C527B53A31002B7AFC /* NumbersToStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = F889B6B927B53A31002B7AFC /* NumbersToStrings.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F889B6CF27B53A77002B7AFC /* NumberToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889B6CE27B53A77002B7AFC /* NumberToString.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +24,6 @@
 
 /* Begin PBXFileReference section */
 		F889B6B627B53A31002B7AFC /* NumbersToStrings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NumbersToStrings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F889B6B927B53A31002B7AFC /* NumbersToStrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumbersToStrings.h; sourceTree = "<group>"; };
 		F889B6BE27B53A31002B7AFC /* NumbersToStringsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumbersToStringsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F889B6C327B53A31002B7AFC /* NumbersToStringsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersToStringsTests.swift; sourceTree = "<group>"; };
 		F889B6CE27B53A77002B7AFC /* NumberToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberToString.swift; sourceTree = "<group>"; };
@@ -71,7 +69,6 @@
 		F889B6B827B53A31002B7AFC /* NumbersToStrings */ = {
 			isa = PBXGroup;
 			children = (
-				F889B6B927B53A31002B7AFC /* NumbersToStrings.h */,
 				F889B6CE27B53A77002B7AFC /* NumberToString.swift */,
 			);
 			path = NumbersToStrings;
@@ -92,7 +89,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F889B6C527B53A31002B7AFC /* NumbersToStrings.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
