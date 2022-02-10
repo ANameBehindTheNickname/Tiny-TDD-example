@@ -9,5 +9,9 @@ let digitNames = [
 ]
 
 func numberToString(_ number: Int) -> String {
-    digitNames[number] ?? ""
+    if number < 10 {
+        return digitNames[number] ?? ""
+    }
+    
+    return "OneZero"
 }

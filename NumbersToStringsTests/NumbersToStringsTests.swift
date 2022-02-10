@@ -12,4 +12,9 @@ class NumbersToStringsTests: XCTestCase {
         let expected = numberToString(0)
         XCTAssertEqual(expected, "Zero")
     }
+    
+    func test_10Int_convertsToOneZero() {
+        let expected = numberToString(10)
+        XCTAssertEqual(expected, "OneZero")
+    }
 }
