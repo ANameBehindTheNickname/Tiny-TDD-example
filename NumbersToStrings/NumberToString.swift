@@ -13,5 +13,9 @@ func numberToString(_ number: Int) -> String {
         return digitNames[number] ?? ""
     }
     
-    return "OneZero"
+    var numberString = ""
+    numberString.append(digitNames[number / 10] ?? "")
+    numberString.append(digitNames[number % 10] ?? "")
+    
+    return numberString
 }
