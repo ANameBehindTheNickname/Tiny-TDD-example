@@ -10,6 +10,7 @@
 		F889B6BF27B53A31002B7AFC /* NumbersToStrings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F889B6B627B53A31002B7AFC /* NumbersToStrings.framework */; };
 		F889B6C427B53A31002B7AFC /* NumbersToStringsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889B6C327B53A31002B7AFC /* NumbersToStringsTests.swift */; };
 		F889B6C527B53A31002B7AFC /* NumbersToStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = F889B6B927B53A31002B7AFC /* NumbersToStrings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F889B6CF27B53A77002B7AFC /* NumberToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889B6CE27B53A77002B7AFC /* NumberToString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 		F889B6B927B53A31002B7AFC /* NumbersToStrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumbersToStrings.h; sourceTree = "<group>"; };
 		F889B6BE27B53A31002B7AFC /* NumbersToStringsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumbersToStringsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F889B6C327B53A31002B7AFC /* NumbersToStringsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersToStringsTests.swift; sourceTree = "<group>"; };
+		F889B6CE27B53A77002B7AFC /* NumberToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberToString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				F889B6B927B53A31002B7AFC /* NumbersToStrings.h */,
+				F889B6CE27B53A77002B7AFC /* NumberToString.swift */,
 			);
 			path = NumbersToStrings;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				TargetAttributes = {
 					F889B6B527B53A31002B7AFC = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					F889B6BD27B53A31002B7AFC = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -191,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F889B6CF27B53A77002B7AFC /* NumberToString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +342,7 @@
 		F889B6C927B53A31002B7AFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -357,6 +363,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -364,6 +371,7 @@
 		F889B6CA27B53A31002B7AFC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -391,6 +399,7 @@
 		F889B6CC27B53A31002B7AFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -405,6 +414,7 @@
 		F889B6CD27B53A31002B7AFC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
