@@ -22,4 +22,19 @@ class NumbersToStringsTests: XCTestCase {
         let expected = numberToString(11)
         XCTAssertEqual(expected, "OneOne")
     }
+    
+    func test_100Int_convertsToOneZeroZero() {
+        let expected = numberToString(100)
+        XCTAssertEqual(expected, "OneZeroZero")
+    }
+    
+    func test_175Int_convertsToOneSevenFive() {
+        let expected = numberToString(175)
+        XCTAssertEqual(expected, "OneSevenFive")
+    }
+    
+    func test_175923405Int_convertsToOneSevenFive() {
+        let expected = numberToString(175923405)
+        XCTAssertEqual(expected, "OneSevenFiveNineTwoThreeFourZeroFive")
+    }
 }
