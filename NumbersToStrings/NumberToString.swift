@@ -9,10 +9,6 @@ let digitNames = [
 ]
 
 func numberToString(_ number: Int) -> String {
-    if number < 10 {
-        return digitNames[number] ?? "Value not in the digitNames 1 - "
-    }
-    
     var number = number
     var stringDigits = [String]()
     while number / 10 > 0 {
@@ -20,7 +16,7 @@ func numberToString(_ number: Int) -> String {
         number /= 10
     }
     
-    stringDigits.append(digitNames[number % 10] ?? "Value not in the digitNames 3 - ")
+    stringDigits.append(digitNames[number] ?? "Value not in the digitNames 3 - ")
     
     return stringDigits.reversed().joined()
 }
